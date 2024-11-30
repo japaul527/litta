@@ -2,7 +2,12 @@ import { productSchema, orderSchema } from '../../utils/validation';
 
 describe('Validation', () => {
   test('Validates product schema', () => {
-    const product = { name: 'Test Product', price: 100 };
+    const product = {
+      "name": "Laptop",
+      "price": 1000,
+      "description": "A high-performance laptop",
+      "stock": 10
+    };
     expect(() => productSchema.parse(product)).not.toThrow();
   });
 

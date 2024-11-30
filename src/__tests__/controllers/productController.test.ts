@@ -23,9 +23,10 @@ describe("Product Controller", () => {
       .post("/api/products")
       .set("Authorization", `Bearer ${token}`)
       .send({
-        name: "Test Product",
-        price: 100,
-        category: "Test Category",
+        "name": "Laptop",
+        "price": 1000,
+        "description": "A high-performance laptop",
+        "stock": 10
       });
 
     expect(response.status).toBe(201);

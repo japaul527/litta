@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../../index"; // Your Express app
+import app from "../../index"; 
 
 describe("Index Routes", () => {
   it("should include the auth routes", async () => {
